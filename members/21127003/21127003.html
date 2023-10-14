@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Thanh An</title>
+
+    <style>
+        body{
+            background-color:lightblue;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-left: 20px;
+        }
+
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-size-adjust: 20px;
+          margin-left: 50px;
+        }
+
+        th{
+          text-align: right;
+        }
+
+        .long-arrow-right{
+            display: block;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            transform: rotate(135deg);
+        }
+
+        .long-arrow-right::after{
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 45px;
+            background-color: black;
+            transform: rotate(-45deg) translate(15px, 4px);
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, I'm Phan Thanh An</h1>
+    <h2>1. Member Information</h2>
+    <table>
+        <tr>
+          <th>No.</th>
+          <th>Student's Information</th>
+        </tr>
+        <tr>
+            <th>Student's ID</th>
+            <th>21127003</th>
+        </tr>
+        <tr>
+            <th>Full Name</th>
+            <th>Phan Thanh An</th>
+        </tr>
+        <tr>
+            <th>DOB</th>
+            <th>11/10/2003</th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th><a href="mailto:ptan21@clc.fitus.edu.vn">ptan21@clc.fitus.edu.vn</a></th>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <th>0900011150</th>
+        </tr>
+    </table>
+    <h2>2. Member Picture</h2>
+    <img style="width: 300px; margin-left: 50px;" src="./images/21127003.png" alt="An Image" usemap="#studentDirection">
+    <div style="display:flex; align-items: center;margin-left: 30px;">
+        <div class="long-arrow-right"></div>
+        <a style="margin-top:10px;  " href="../../default.html">Back to Group Page</a>
+    </div>
+
+    
+</body>
+</html>
